@@ -1,0 +1,326 @@
+:root{
+    --color-menu:#FFF9F9;
+    --color-primavera:#C98347;
+    --color-tarjeta: rgba(153, 240, 188, 0.17);
+    --color-footer: #504A4A;
+    --color-redes: #CFE7D8;
+    --color-botones: #F6B57D;
+    --color-boton-agregar:#F48585;
+    --color-boton-agregar-borde:#A95B5B;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #EFE8F1;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.barra-nav{
+    background-color: var(--color-menu);
+    height: 50px;
+    position: sticky;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.09);
+}
+.barra-nav .menu-icon{
+    background-image: url('../assets/icons/menu.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    display: inline-block;
+    top: 14px;
+    left: 15px;
+    width: 24px;
+    height: 24px;
+}
+.barra-nav .search-container{
+    position: absolute;
+    right: 25%;
+    left: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.barra-nav .search-container .search-icon{
+    background-image: url('../assets/icons/search.svg');
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    z-index: 1;
+    margin-top: 17px;
+    margin-right: 100px;
+}
+.barra-nav .search-container .buscador{
+    width: 145px;
+    height: 32px;
+    border-radius: 25px;
+    border: 1px solid #c9c9c9;
+    /**/
+    position: absolute;
+    left: calc(50% - 145px/2 - 0.5px);
+    top: 9px;
+}
+.barra-nav .shop-icon{
+    background-image: url('../assets/icons/shop.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    display: inline-block;
+    right: 15px;
+    top: 14px;
+    width: 24px;
+    height: 24px;
+}
+main .icon-container{
+    /*contenedor padre del icon se le aplica el flex*/
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}
+main .primavera-icon{
+    background-image: url('../assets/icons/primavera-icon.svg');
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+    width: 92px;
+    height: 91px;
+    display: inline-block;
+    justify-content: center;
+}
+h1{
+    font-family: 'Roboto Slab', serif;;
+    text-align: center;
+    margin-left: 12px;
+    letter-spacing: 8px;
+    font-size: 3.6rem;
+    color: var(--color-primavera);
+    font-weight: lighter;
+}
+main .frase{
+    font-weight: lighter;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 21px;
+}
+
+main .selector-container{
+    background-color: #FFF9F9;
+    width: 100%;
+    height: 525px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.09);
+    
+}
+main .selector-container .imagen-completa-container{
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+}
+main .selector-container .imagen-completa-container .imagen{
+    background-image: url('../assets/images/1.png');
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+    width: 281px;
+    height: 345px;
+    display: inline-block;
+    border-radius: 20px;
+}
+main .selector-container .nombre-producto-container{
+    display: flex;
+    justify-content: left;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+main .selector-container .nombre-producto-container h2{
+    font-size: 2rem;
+    font-weight: lighter;
+    display: flex;
+}
+main .selector-container .precio-container{
+    display: flex;
+    justify-content: left;
+    margin-left: 25px;
+    margin-top: 1px;
+}
+main .selector-container .precio-container p{
+    font-size: 1.8rem;
+    font-weight: lighter;
+}
+main .selector-container .cantidad-container{
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: left;
+    margin-left: 25px;
+    margin-top: 1px;
+}
+main .selector-container .cantidad-container .circuloplus{
+    background-color: var(--color-botones);
+    border-radius: 20px;
+    margin-left: 10px;
+}
+main .selector-container .cantidad-container .plus-icon{
+    padding: 5px;
+}
+main .selector-container .cantidad-container .circuloless{
+    background-color: var(--color-botones);
+    border-radius: 20px;
+}
+main .selector-container .cantidad-container .less-icon{
+    padding: 9px;
+}
+main .selector-container .cantidad-container .items{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+main .selector-container .share-container{
+    background-color: var(--color-redes);
+    display: flex;
+    margin-top: 7px;
+    border-radius: 15px;
+    padding: 4px;
+    position: absolute;
+    left: 0;
+    margin-left: 25px;
+}
+main .selector-container .share-icon{
+    background-image: url('../assets/icons/share.svg');
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    border-radius: 20px;
+}
+main .selector-container .agregar-item-container{
+    display: flex;
+    background-color: var(--color-botones);
+    align-items: center;
+    justify-content: center;
+    margin-top: 51px;
+    width: 100%;
+    height: 44px;
+    
+}
+main .selector-container .agregar-item-container button{
+    border-radius: 25px;
+    width: auto;
+    height: 32px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: var(--color-boton-agregar);
+    border: 1px solid var(--color-boton-agregar-borde);
+    font-family: 'Roboto', sans-serif;;
+    font-weight: lighter;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.09);
+    
+}
+main .selector-container .agregar-item-container button p{
+   color: white;
+    font-size: 1.8rem;
+    font-weight: lighter;
+}
+
+main .descripcion-container{
+    background-color: #FFF9F9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.09);
+    margin-top: 21px;
+    padding-bottom: 8px;
+}
+main .descripcion-container h4{
+    font-size: 2rem;
+    color: #6A6A6A;
+    opacity: 56%;
+    padding-left: 23px;
+    padding-top: 8px;
+}
+main .descripcion-container .talle{
+    font-size: 1.8rem;
+    padding-left: 23px;
+}
+main .descripcion-container p{
+    font-size: 1.8rem;
+    padding-left: 30px;
+}
+
+
+
+
+footer .barra-footer{
+    width: 100%;
+    background-color: var(--color-footer);
+    height: 95px;
+    margin-top: 29px;
+    display: flex;
+    margin-bottom: 0;
+}
+footer .barra-footer .envio{
+    font-size: 1.4rem;
+    color: #FFFFFF;
+    font-weight: lighter;
+    margin-left: 20px;
+    margin-top: 10px;
+    position: absolute;
+}
+footer .barra-footer .arroba{
+    font-size: 1.4rem;
+    color: #FFFFFF;
+    font-weight: lighter;
+    margin-left: 20px;
+    margin-top: 30px;
+    position: absolute;
+}
+footer .ig-container .ig{
+    background-image: url('../assets/icons/instagram.svg');
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    background-color: var(--color-redes);
+    border-radius: 15px;
+    margin-top: 55px;
+    margin-left: 65px;
+    left: 0;
+
+}
+footer .fb-container .fb{
+    background-image: url('../assets/icons/facebook.svg');
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    background-color: var(--color-redes);
+    border-radius: 15px;
+    margin-top: 55px;
+    margin-left: 20px;
+    left: 0;
+}
+main .wsp-container .wsp{
+    background-image: url('../assets/icons/whatsapp.svg');
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+    width: 42px;
+    height: 42px;
+    background-color: var(--color-redes);
+    border-radius: 25px;
+    margin-right: 10px;
+    position: fixed;
+    right: 2vw;
+    bottom: 2vh;
+}

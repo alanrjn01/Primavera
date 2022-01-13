@@ -1,0 +1,383 @@
+:root{
+    --color-menu:#FFF9F9;
+    --color-primavera:#C98347;
+    --color-tarjeta: rgba(153, 240, 188, 0.17);
+    --color-footer: #504A4A;
+    --color-redes: #CFE7D8;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #EFE8F1;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.barra-nav{
+    background-color: var(--color-menu);
+    height: 50px;
+    position: sticky;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.09);
+}
+.barra-nav .menu-icon{
+    background-image: url('../assets/icons/menu.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    display: inline-block;
+    top: 14px;
+    left: 15px;
+    width: 24px;
+    height: 24px;
+}
+.barra-nav .search-container{
+    position: absolute;
+    right: 25%;
+    left: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.barra-nav .search-container .search-icon{
+    background-image: url('../assets/icons/search.svg');
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    z-index: 1;
+    margin-top: 17px;
+    margin-right: 100px;
+}
+.barra-nav .search-container .buscador{
+    width: 145px;
+    height: 32px;
+    border-radius: 25px;
+    border: 1px solid #c9c9c9;
+    /**/
+    position: absolute;
+    left: calc(50% - 145px/2 - 0.5px);
+    top: 9px;
+}
+.barra-nav .shop-icon{
+    background-image: url('../assets/icons/shop.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    display: inline-block;
+    right: 15px;
+    top: 14px;
+    width: 24px;
+    height: 24px;
+}
+main .icon-container{
+    /*contenedor padre del icon se le aplica el flex*/
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}
+main .primavera-icon{
+    background-image: url('../assets/icons/primavera-icon.svg');
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+    width: 92px;
+    height: 91px;
+    display: inline-block;
+    justify-content: center;
+}
+h1{
+    font-family: 'Roboto Slab', serif;;
+    text-align: center;
+    margin-left: 12px;
+    letter-spacing: 8px;
+    font-size: 3.6rem;
+    color: var(--color-primavera);
+    font-weight: lighter;
+}
+main .frase{
+    font-weight: lighter;
+    font-size: 1.4rem;
+    text-align: center;
+}
+main .scroll-horizontal-container{
+    margin-top: 21px;
+    background-color: var(--color-menu);
+    width: 100%;
+    height: 339px;
+}
+main .scroll-horizontal-container .destacado-container{
+    width: 100%;
+    background-color: rgba(230, 194, 194, 0.44);
+    border: 1px  solid #c9c9c9;
+    height: 48px;
+    display: inline-block;
+    margin-top: 14px;
+}
+main .scroll-horizontal-container .destacado-container h2{
+    text-align: center;
+    padding: 10px;
+    font-size: 2.4rem;
+    font-weight: lighter;
+    position: relative;
+}
+main .scroll-horizontal-container .tarjeta-container{
+    background-color: var(--color-tarjeta);
+    width: 201px;
+    height: 251px;
+    margin-top: 12px;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: flex-start;
+    order: 1;
+
+}
+main .scroll-horizontal-container .tarjeta-container .imagen-container{
+    width: 185px;
+    height: 185px;
+    border-radius: 10px;
+    margin-left: 8px;
+    margin-top: 10px;
+    position: absolute;
+}
+main .scroll-horizontal-container .tarjeta-container .imagen-container .imagen{
+    background-image: url('../assets/images/1.png');
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+    width: 185px;
+    height: 185px;
+    display: inline-block;
+    justify-content: center;
+    border-radius: 10px;
+}
+main .scroll-horizontal-container .tarjeta-container h3{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: lighter;
+    margin-top: 202px;
+    margin-left: 48px;
+    position: absolute;
+}
+main .scroll-horizontal-container .tarjeta-container p{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: lighter;
+    margin-top: 225px;
+    margin-left: 71px;
+    position: absolute;
+}
+/* main .scroll-horizontal-container .flecha-izquierda{
+    background-image: url('../assets/icons/arrow_forward_ios.svg');
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    transform: rotate(-180deg);
+    bottom: 102px;
+    left: 32px;
+}
+main .scroll-horizontal-container .flecha-derecha{
+    background-image: url('../assets/icons/arrow_forward_ios.svg');
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 32px;
+    top: 420px;
+} */
+
+/****************************************************/
+main .scroll-horizontal-container2{
+    margin-top: 21px;
+    background-color: var(--color-menu);
+    width: 100%;
+    height: 339px;
+}
+main .scroll-horizontal-container2 .ultimos-ingresos-container{
+    width: 100%;
+    background-color: rgba(230, 194, 194, 0.44);
+    border: 1px  solid #c9c9c9;
+    height: 48px;
+    display: inline-block;
+    margin-top: 14px;
+}
+main .scroll-horizontal-container2 .ultimos-ingresos-container h2{
+    text-align: center;
+    padding: 10px;
+    font-size: 2.4rem;
+    font-weight: lighter;
+    position: relative;
+}
+main .scroll-horizontal-container2 .tarjeta-container2{
+    background-color: var(--color-tarjeta);
+    width: 201px;
+    height: 251px;
+    margin-top: 12px;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: flex-start;
+    order: 1;
+
+}
+main .scroll-horizontal-container2 .tarjeta-container2 .imagen-container2{
+    width: 185px;
+    height: 185px;
+    border-radius: 10px;
+    margin-left: 8px;
+    margin-top: 10px;
+    position: absolute;
+}
+main .scroll-horizontal-container2 .tarjeta-container2 .imagen-container2 .imagen2{
+    background-image: url('../assets/images/2.png');
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+    width: 185px;
+    height: 185px;
+    display: inline-block;
+    justify-content: center;
+    border-radius: 10px;
+}
+main .scroll-horizontal-container2 .tarjeta-container2 .titulo{
+    text-align: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: lighter;
+    margin-top: 202px;
+    margin-left: 48px;
+    position: absolute;
+    display: block;
+}
+main .scroll-horizontal-container2 .tarjeta-container2 p{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: lighter;
+    margin-top: 225px;
+    margin-left: 71px;
+    position: absolute;
+}
+/* main .scroll-horizontal-container2 .flecha-izquierda2{
+    background-image: url('../assets/icons/arrow_forward_ios.svg');
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    transform: rotate(-180deg);
+    top: 784px;
+    left: 32px;
+}
+main .scroll-horizontal-container .flecha-derecha-bottom{
+    background-image: url('../assets/icons/arrow_forward_ios.svg');
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 32px;
+    top: 30px;
+} */
+
+main .payment-icon-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+main .payment-icon-container span{
+    background-image: url('../assets/icons/payment.svg');
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+}
+main .metodo-pago{
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 6px;
+}
+footer .barra-footer{
+    width: 100%;
+    background-color: var(--color-footer);
+    height: 95px;
+    margin-top: 29px;
+    display: flex;
+}
+footer .barra-footer .envio{
+    font-size: 1.4rem;
+    color: #FFFFFF;
+    font-weight: lighter;
+    margin-left: 20px;
+    margin-top: 10px;
+    position: absolute;
+}
+footer .barra-footer .arroba{
+    font-size: 1.4rem;
+    color: #FFFFFF;
+    font-weight: lighter;
+    margin-left: 20px;
+    margin-top: 30px;
+    position: absolute;
+}
+footer .ig-container .ig{
+    background-image: url('../assets/icons/instagram.svg');
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    background-color: var(--color-redes);
+    border-radius: 15px;
+    margin-top: 55px;
+    margin-left: 65px;
+    left: 0;
+
+}
+footer .fb-container .fb{
+    background-image: url('../assets/icons/facebook.svg');
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    background-color: var(--color-redes);
+    border-radius: 15px;
+    margin-top: 55px;
+    margin-left: 20px;
+    left: 0;
+}
+main .wsp-container .wsp{
+    background-image: url('../assets/icons/whatsapp.svg');
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+    width: 42px;
+    height: 42px;
+    background-color: var(--color-redes);
+    border-radius: 25px;
+    margin-right: 10px;
+    position: fixed;
+    right: 2vw;
+    bottom: 2vh;
+}
