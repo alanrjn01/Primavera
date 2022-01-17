@@ -15,16 +15,47 @@
     <header>
         <nav class="barra-nav">
             <div>
-                <span class="menu-icon"></span>
+                <span class="menu-icon" onclick="mostrarMenu()"></span>
             </div>
             <div class="search-container">
                 <span class="search-icon"></span>
                 <input type="search" class="buscador">
             </div>
             <div>
-                <span class="shop-icon"></span>
+                <span class="shop-icon" onclick="mostrarCarrito()"></span>
             </div>
         </nav>
+        <div class="menu-desplegable-container">
+                <ul class="menu-desplegable" id="menu">
+                    <li><a href="">cintos</a></li>
+                    <li><a href="">jeans</a></li>
+                    <li><a href="">shorts</a></li>
+                    <li><a href="">wideleg</a></li>
+                </ul>
+        </div>
+        <div class="carrito-desplegable-container" id="carrito">
+            <div class="itemNumeroUno">
+                <p class="itemNombreUno">short momo coco</p>
+                <div class="circuloMas">+</div>
+                <p class="cantidad">1</p>
+                <div class="circuloMenos">-</div>
+                <p class="itemPrecioUno">$3200,00</p>
+            </div>
+            <div class="itemNumeroDos">
+                <p class="itemNombreDos">slouchy block</p>
+                <div class="circuloMas">+</div>
+                <p class="cantidadDos">2</p>
+                <div class="circuloMenos">-</div>
+                <p class="itemPrecioDos">$6400,00</p>
+            </div>
+            <div class="total-container">
+                <p class="total-estimado">Total estimado: $9800,00</p>
+            </div>
+            <div class="finalizar-container">
+                <button type="button" class="finalizar-carrito">Finalizar carrito</button>
+            </div>
+        </div>
+            
     </header>
     <main>
         <div class="wsp-container">
@@ -88,5 +119,6 @@
             </div>
         </div> 
     </footer>
+    <script src="js/primavera.js"></script>
 </body>
 </html>
