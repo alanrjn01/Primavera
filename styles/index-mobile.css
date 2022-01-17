@@ -78,6 +78,7 @@ header{
     height: fit-content;
     border-bottom: black 1px solid;
     display: none;
+    position: fixed;
 
 }
 
