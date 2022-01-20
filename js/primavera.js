@@ -10,6 +10,7 @@ function mostrarMenu(){
         menu.style.display = "none";
     }
 }
+botonApretado=false;
 function mostrarCarrito(){
     let menu= document.getElementById("carrito");
     if(botonApretado===false){
